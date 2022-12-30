@@ -1,0 +1,523 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+@font-face {
+  font-family: "Oswald-VariableFont";
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Inconsolata-VariableFont";
+  src: url(../fonts/Inconsolata-VariableFont_wdth\wght.ttf);
+}
+
+body {
+  /* font-family: "Oswald-VariableFont"; */
+  font-family: "Inconsolata-VariableFont";
+}
+
+.header {
+  background-image: url(../img/header-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 5;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.143);
+  z-index: -1;
+}
+
+.header > .box1-header {
+  width: 100%;
+  height: 75px;
+  /* border-bottom: 1px solid black; */
+  display: flex;
+}
+
+/* start figure  */
+
+.header > .box1-header > div:nth-of-type(1) {
+  width: 15%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header > .box1-header > div:nth-of-type(1) > figure {
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.header > .box1-header > div:nth-of-type(1) > figure > a > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* end figure */
+
+/* start menu */
+
+.box1-header > .menu {
+  width: 70%;
+  height: 100%;
+  /* border: 1px solid lightcoral; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box1-header > .menu > ul {
+  width: 400px;
+  height: 100%;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box1-header > .menu > ul > li {
+  flex-grow: 1;
+  /* border: 1px solid black; */
+}
+
+.box1-header > .menu > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+.header > .box1-header > div:nth-of-type(2) {
+  width: 15%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > .box1-header > div:nth-of-type(2) > a {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  /* background-color: yellow; */
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+/* box-header */
+
+.header > .box2-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header > .box2-header div:nth-of-type(1) {
+  font-size: 50px;
+  color: white;
+}
+
+.header > .box2-header div:nth-of-type(2) {
+  font-size: 120px;
+  color: white;
+}
+
+.header > .box2-header div:nth-of-type(3) {
+  width: 300px;
+  text-align: center;
+  /* border: 1px solid green; */
+  font-size: 20px;
+  color: white;
+}
+
+.header > .box2-header div:nth-of-type(4) {
+  width: 185px;
+  /* border: 1px solid red; */
+  height: 60px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.header > .box2-header div:nth-of-type(4) > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #ffda36;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: black;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.header > .box2-header div:nth-of-type(4):hover > a {
+  background-color: #e7be05;
+}
+
+/* main */
+
+.main > .box1-main {
+  width: 100%;
+  height: 230px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > .box1-main > div {
+  font-size: 25px;
+  color: #556a45;
+  position: relative;
+}
+
+.main > .box1-main > div::after {
+  content: " ";
+  width: 90px;
+  height: 3px;
+  background-color: #e7be05;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 45px);
+}
+
+.main > .box2-main {
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.main > .box2-main > figure {
+  width: 430px;
+  height: 600px;
+  /* border: 1px solid green; */
+  position: relative;
+  border-radius: 5px;
+}
+
+.main > .box2-main > figure > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.main > .box2-main .paragraf {
+  width: 430px;
+  height: 200px;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.main > .box2-main .paragraf div:nth-of-type(1) {
+  color: #43503a;
+  font-size: 20px;
+}
+
+.main > .box2-main .paragraf div:nth-of-type(2) {
+  width: 320px;
+  /* border: 1px solid lightcoral; */
+  font-size: 20px;
+  line-height: 30px;
+  color: #556a45;
+}
+
+.main > .box3-main {
+  width: 100%;
+  height: 500px;
+  background-color: #f5f8f5;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main > .box3-main figure:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.main > .box3-main figure:nth-of-type(1) > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #556a45;
+}
+
+.main > .box3-main figure:nth-of-type(2) {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.main > .box3-main figure:nth-of-type(2)::after {
+  content: " Jane Miller";
+  width: 100px;
+  position: absolute;
+  bottom: -30px;
+  left: calc(80% - 50px);
+}
+
+.main > .box3-main figure:nth-of-type(2) > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #556a45;
+}
+
+.main > .box3-main > div {
+  width: 500px;
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: #556a45;
+}
+
+.main > .box4-main {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid black; */
+  display: flex;
+  padding: 30px;
+}
+
+.main > .box4-main > div {
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.main > .box4-main > .row1Box4-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.main > .box4-main > .row1Box4-main div:nth-of-type(1) {
+  font-size: 15px;
+  color: #556a45;
+}
+
+.main > .box4-main > .row1Box4-main div:nth-of-type(2) {
+  width: 600px;
+  font-size: 45px;
+  color: #556a45;
+}
+.main > .box4-main > .row1Box4-main div:nth-of-type(3) {
+  width: 450px;
+  font-size: 20px;
+  color: #556a45;
+  line-height: 30px;
+}
+
+.main > .box4-main > .row1Box4-main div:nth-of-type(4) {
+  width: 220px;
+  height: 60px;
+}
+
+.main > .box4-main > .row1Box4-main div:nth-of-type(4) a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #556a45;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: #556a45;
+}
+
+.main > .box4-main > .row2Box4-main {
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main > .box4-main > .row2Box4-main > figure {
+  width: 500px;
+  height: 600px;
+  /* border: 1px solid lightblue; */
+  position: relative;
+  border-radius: 10px;
+}
+
+.main > .box4-main > .row2Box4-main > figure > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 700px;
+  /* border: 1px solid gray; */
+}
+
+footer > .box1-foot {
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/footer-hero-big.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer > .box1-foot div:nth-of-type(1) {
+  font-size: 45px;
+  color: #556a45;
+}
+footer > .box1-foot div:nth-of-type(2) {
+  font-size: 20px;
+  color: #556a45;
+  width: 460px;
+  text-align: center;
+  line-height: 30px;
+}
+
+footer > .box1-foot div:nth-of-type(3) {
+  width: 200px;
+  height: 60px;
+}
+
+footer > .box1-foot div:nth-of-type(3) a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #ffda36;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #556a45;
+  transition: 0.4s;
+}
+
+footer > .box1-foot div:nth-of-type(3) a:hover {
+  background-color: #e7be05;
+}
+
+footer > .box2-foot {
+  width: 100%;
+  height: 150px;
+  /* background-color: gray; */
+  display: flex;
+}
+
+footer > .box2-foot > nav {
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+footer > .box2-foot > nav > ul {
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+}
+
+footer > .box2-foot > nav > ul > li {
+  flex-grow: 1;
+  /* border: 1px solid black; */
+}
+footer > .box2-foot > nav > ul > li > a {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #556a45;
+
+  /* background-color: yellow; */
+}
+
+footer > .box2-foot > figure {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .box2-foot > div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e7be05;
+  line-height: 30px;
+}
+
+footer > .box2-foot > div > h4 > a {
+  color: #556a45;
+}
